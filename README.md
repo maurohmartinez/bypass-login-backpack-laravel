@@ -12,7 +12,7 @@ composer require maurohmartinez/login-as-backpack-laravel --dev
 
 2. Publish the config file
 ```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsAuthServiceProvider" --tag=config
+   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=config
 ```
 
 3. Customize the config file
@@ -27,11 +27,11 @@ composer require maurohmartinez/login-as-backpack-laravel --dev
 
 4. [Optional] Publish config views if you need to customize them
 ```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsAuthServiceProvider" --tag=view
+   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=view
 ```
 
 ## Contact
-Project Link: [https://github.com/maurohmartinez/two-factor-auth-laravel](https://github.com/maurohmartinez/two-factor-auth-laravel)
+Project Link: [https://github.com/maurohmartinez/login-as-backpack-laravel](https://github.com/maurohmartinez/login-as-backpack-laravel)
 
 ## Credits
 - [Mauro Martinez](https://inspiredpulse.com/) Developer
