@@ -1,0 +1,41 @@
+{
+  "name": "maurohmartinez/login-as-backpack-laravel",
+  "description": "Login as to test your application locally using users with different roles",
+  "type": "library",
+  "require": {
+    "php": "^8.0",
+    "backpack/crud": "^6.0",
+    "backpack/permissionmanager": "^7.0",
+    "laravel/framework": "^10.0.0"
+  },
+  "keywords": [
+    "laravel",
+    "backpack",
+    "login as",
+    "bypass login",
+    "test users locally"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "maurohmartinez",
+      "email": "maurohmartinez@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "MHMartinez\\LoginAs\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MHMartinez\\LoginAs\\app\\Providers\\LoginAsServiceProvider"
+      ],
+      "aliases": {
+        "LoginAs": "MHMartinez\\LoginAs\\Facades\\LoginAs"
+      }
+    }
+  }
+}
