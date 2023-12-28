@@ -14,8 +14,12 @@ use Illuminate\Contracts\View\View;
 
 class LoginAs extends Controller
 {
-    public function loginAs(): View
+    public function loginAs(?int $id = null): View
     {
+        if ($id) {
+            return $this->loginAndRedirect(User::firstOrFail($id));
+        }
+
         return view('login_as::form', [
             'roles' => config('backpack.permissionmanager.models.role')::all()->pluck('name', 'id')->toArray(),
         ]);
@@ -39,6 +43,11 @@ class LoginAs extends Controller
             return Redirect::back()->withErrors(['role_id' => 'No user found with this role.']);
         }
 
+        return $this->loginAndRedirect($user);
+    }
+
+    private function loginAndRedirect(User $user)
+    {
         Auth::guard(config('backpack.base.guard'))->logout();
         Auth::guard(config('backpack.base.guard'))->login($user);
 
