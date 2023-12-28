@@ -1,7 +1,7 @@
 # Login as — Backpack for Laravel
 Use a simple url to login with users having different roles to test your application locally.
 
-<img width="796" alt="Screenshot 2023-11-25 at 14 01 52" src="https://github.com/maurohmartinez/login-as-backpack-laravel/assets/33960976/52a0d444-4827-4dbf-bbea-079b47815045">
+<img width="796" alt="login-as" src="https://github.com/maurohmartinez/login-as-backpack-laravel/assets/33960976/edae8441-280f-44cf-ba57-37f922f72046">
 
 ## Requirements
 This packages depends on:
