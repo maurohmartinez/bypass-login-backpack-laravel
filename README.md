@@ -1,4 +1,4 @@
-# Login as — Backpack for Laravel
+# Bypass Login — Backpack for Laravel
 Use a simple url to login with users having different roles to test your application locally.
 
 ⚠️ DO NOT install in production! ⚠️
