@@ -3,7 +3,7 @@
   "description": "Login as to test your application locally using users with different roles",
   "type": "library",
   "require": {
-    "php": "^8.0",
+    "php": "^8.1",
     "backpack/crud": "^6.0",
     "backpack/permissionmanager": "^7.0",
     "laravel/framework": "^10.0.0"

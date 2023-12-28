@@ -11,11 +11,6 @@ class LoginAsServiceProvider extends ServiceProvider
         // Routes
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
 
-        // Config
-        $this->publishes([
-            __DIR__ . '/../../config/login_as.php' => config_path('login_as.php'),
-        ], 'config');
-
         // Views
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'login_as');
         $this->publishes([

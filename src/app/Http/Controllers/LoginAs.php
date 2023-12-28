@@ -51,6 +51,6 @@ class LoginAs extends Controller
         Auth::guard(config('backpack.base.guard'))->logout();
         Auth::guard(config('backpack.base.guard'))->login($user);
 
-        return Redirect::to(config('login_as.login_path', 'admin/login'));
+        return Redirect::to(env('LOGIN_URL', 'admin/login'));
     }
 }
