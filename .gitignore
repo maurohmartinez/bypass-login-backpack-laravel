@@ -1,5 +1,5 @@
 !.gitignore
 
 .idea/*
-composer.lock
 /vendor
+composer.lock
