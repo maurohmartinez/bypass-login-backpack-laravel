@@ -14,7 +14,7 @@ use Illuminate\Contracts\View\View;
 
 class LoginAs extends Controller
 {
-    public function loginAs(?int $id = null): View
+    public function loginAs(?int $id = null): View|RedirectResponse
     {
         if ($id) {
             return $this->loginAndRedirect(User::findOrFail($id));
@@ -46,7 +46,7 @@ class LoginAs extends Controller
         return $this->loginAndRedirect($user);
     }
 
-    private function loginAndRedirect(User $user)
+    private function loginAndRedirect(User $user): RedirectResponse
     {
         Auth::guard(config('backpack.base.guard'))->logout();
         Auth::guard(config('backpack.base.guard'))->login($user);
