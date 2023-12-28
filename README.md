@@ -24,7 +24,7 @@ LOGIN_URL=admin/login
 
 3. [Optional] Publish config views if you need to customize them
 ```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=view
+   php artisan vendor:publish --provider="MHMartinez\BypassLogin\app\Providers\BypassLoginServiceProvider" --tag=view
 ```
 
 ### That's it!

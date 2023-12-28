@@ -25,16 +25,16 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "MHMartinez\\LoginAs\\": "src/"
+      "MHMartinez\\BypassLogin\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "MHMartinez\\LoginAs\\app\\Providers\\LoginAsServiceProvider"
+        "MHMartinez\\BypassLogin\\app\\Providers\\BypassLoginServiceProvider"
       ],
       "aliases": {
-        "LoginAs": "MHMartinez\\LoginAs\\Facades\\LoginAs"
+        "BypassLogin": "MHMartinez\\BypassLogin\\Facades\\BypassLogin"
       }
     }
   }

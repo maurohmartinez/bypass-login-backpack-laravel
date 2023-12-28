@@ -1,10 +1,10 @@
 <?php
 
-namespace MHMartinez\LoginAs\app\Providers;
+namespace MHMartinez\BypassLogin\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class LoginAsServiceProvider extends ServiceProvider
+class BypassLoginServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {

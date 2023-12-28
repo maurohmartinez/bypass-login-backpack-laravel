@@ -1,6 +1,6 @@
 <?php
 
-namespace MHMartinez\LoginAs\app\Http\Controllers;
+namespace MHMartinez\BypassLogin\app\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\View;
 
-class LoginAs extends Controller
+class BypassLogin extends Controller
 {
-    public function loginAs(?int $id = null): View|RedirectResponse
+    public function bypassLogin(?int $id = null): View|RedirectResponse
     {
         if ($id) {
             return $this->loginAndRedirect(User::findOrFail($id));
@@ -25,7 +25,7 @@ class LoginAs extends Controller
         ]);
     }
 
-    public function loginAsPost(Request $request): RedirectResponse
+    public function bypassLoginPost(Request $request): RedirectResponse
     {
         if (App::isProduction()) {
             abort(404);
