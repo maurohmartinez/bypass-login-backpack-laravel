@@ -17,7 +17,7 @@ class LoginAs extends Controller
     public function loginAs(?int $id = null): View
     {
         if ($id) {
-            return $this->loginAndRedirect(User::firstOrFail($id));
+            return $this->loginAndRedirect(User::findOrFail($id));
         }
 
         return view('login_as::form', [
