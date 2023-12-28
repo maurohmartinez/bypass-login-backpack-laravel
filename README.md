@@ -3,7 +3,7 @@ Use a simple url to login with users having different roles to test your applica
 
 ⚠️ DO NOT install in production! ⚠️
 
-<img width="796" alt="login-as" src="https://github.com/maurohmartinez/login-as-backpack-laravel/assets/33960976/edae8441-280f-44cf-ba57-37f922f72046">
+<img width="796" alt="bypass-login" src="https://github.com/maurohmartinez/bypass-login-backpack-laravel/assets/33960976/edae8441-280f-44cf-ba57-37f922f72046">
 
 ## Requirements
 This packages depends on:
@@ -14,7 +14,7 @@ This packages depends on:
 ## How to install
 1. Use composer to require this project **locally**
 ```shell
-composer require maurohmartinez/login-as-backpack-laravel --dev
+composer require maurohmartinez/bypass-login-backpack-laravel --dev
 ```
 
 2. Add in your .env file the login path relative to your project url, like this...
@@ -33,7 +33,7 @@ You have now two new ways to login:
 2. In case you just want to pass a user id, go to your login page, and add `/as/{id}` to login.
 
 ## Contact
-Project Link: [https://github.com/maurohmartinez/login-as-backpack-laravel](https://github.com/maurohmartinez/login-as-backpack-laravel)
+Project Link: [https://github.com/maurohmartinez/bypass-login-backpack-laravel](https://github.com/maurohmartinez/bypass-login-backpack-laravel)
 
 ## Credits
 - [Mauro Martinez](https://inspiredpulse.com/) Developer
