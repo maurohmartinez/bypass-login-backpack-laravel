@@ -1,6 +1,8 @@
 # Login as — Backpack for Laravel
 Use a simple url to login with users having different roles to test your application locally.
 
+⚠️ DO NOT install in production! ⚠️
+
 <img width="796" alt="login-as" src="https://github.com/maurohmartinez/login-as-backpack-laravel/assets/33960976/edae8441-280f-44cf-ba57-37f922f72046">
 
 ## Requirements
@@ -15,17 +17,12 @@ This packages depends on:
 composer require maurohmartinez/login-as-backpack-laravel --dev
 ```
 
-2. Publish the config file
-```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=config
-```
-
-3. Add in your .env file the login path relative to your project url, like this...
+2. Add in your .env file the login path relative to your project url, like this...
 ```dotenv
 LOGIN_URL=admin/login
 ```
 
-4. [Optional] Publish config views if you need to customize them
+3. [Optional] Publish config views if you need to customize them
 ```shell
    php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=view
 ```
