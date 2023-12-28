@@ -30,6 +30,11 @@ composer require maurohmartinez/login-as-backpack-laravel --dev
    php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=view
 ```
 
+### That's it!
+You have now two new ways to login:
+1. Go to your login page, add `/as` at the end and pick a user's role to login.
+2. In case you just want to pass a user id, go to your login page, and add `/as/{id}` to login.
+
 ## Contact
 Project Link: [https://github.com/maurohmartinez/login-as-backpack-laravel](https://github.com/maurohmartinez/login-as-backpack-laravel)
 
