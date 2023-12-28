@@ -1,5 +1,5 @@
 # Login as — Backpack for Laravel
-Use a simple url to login with with users having different roles to test your application locally.
+Use a simple url to login with users having different roles to test your application locally.
 
 <img width="796" alt="Screenshot 2023-11-25 at 14 01 52" src="https://github.com/maurohmartinez/login-as-backpack-laravel/assets/33960976/52a0d444-4827-4dbf-bbea-079b47815045">
 
@@ -12,7 +12,7 @@ composer require maurohmartinez/login-as-backpack-laravel --dev
 
 2. Publish the config file
 ```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsAuthServiceProvider" --tag=config
+   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=config
 ```
 
 3. Customize the config file
@@ -27,11 +27,11 @@ composer require maurohmartinez/login-as-backpack-laravel --dev
 
 4. [Optional] Publish config views if you need to customize them
 ```shell
-   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsAuthServiceProvider" --tag=view
+   php artisan vendor:publish --provider="MHMartinez\LoginAs\app\Providers\LoginAsServiceProvider" --tag=view
 ```
 
 ## Contact
-Project Link: [https://github.com/maurohmartinez/two-factor-auth-laravel](https://github.com/maurohmartinez/two-factor-auth-laravel)
+Project Link: [https://github.com/maurohmartinez/login-as-backpack-laravel](https://github.com/maurohmartinez/login-as-backpack-laravel)
 
 ## Credits
 - [Mauro Martinez](https://inspiredpulse.com/) Developer
