@@ -8,7 +8,7 @@
             </div>
             <div class="card card-md">
                 <div class="card-body text-center">
-                    <h2 class="h2 text-center my-4">Login as</h2>
+                    <h2 class="h2 text-center my-4">Bypass Login</h2>
                     <p class="mb-0">We will login the first active user with this role.</p>
                     <p class="m-0 text-danger">
                         <small><i class="la la-warning"></i> This is only meant to be used locally!</small>
@@ -25,7 +25,7 @@
                             <div class="invalid-feedback">{{ $errors->first('role_id') }}</div>
                         @endif
                         <div class="form-footer">
-                            <button tabindex="5" type="submit" class="btn btn-primary w-100">Login as</button>
+                            <button tabindex="5" type="submit" class="btn btn-primary w-100">Login As</button>
                         </div>
                     </form>
                 </div>

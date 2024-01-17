@@ -7,6 +7,6 @@ Route::group([
     'middleware' => 'web',
     'prefix' => env('LOGIN_URL', 'admin/login'),
 ], function () {
-    Route::get('as/{id?}', [BypassLogin::class, 'bypassLogin']);
-    Route::post('as', [BypassLogin::class, 'bypassLoginPost']);
+    Route::get('bypass/{id?}', [BypassLogin::class, 'bypassLogin']);
+    Route::post('bypass', [BypassLogin::class, 'bypassLoginPost']);
 });

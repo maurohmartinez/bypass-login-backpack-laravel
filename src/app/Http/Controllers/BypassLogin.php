@@ -20,7 +20,7 @@ class BypassLogin extends Controller
             return $this->loginAndRedirect(User::findOrFail($id));
         }
 
-        return view('login_as::form', [
+        return view('bypass_login::form', [
             'roles' => config('backpack.permissionmanager.models.role')::all()->pluck('name', 'id')->toArray(),
         ]);
     }

@@ -1,6 +1,6 @@
 {
   "name": "maurohmartinez/bypass-login-backpack-laravel",
-  "description": "Login as to test your application locally using users with different roles or by passing a user id.",
+  "description": "Bypass login to test your application locally using users with different roles or by user id.",
   "type": "library",
   "require": {
     "php": "^8.1",
@@ -11,7 +11,6 @@
   "keywords": [
     "laravel",
     "backpack",
-    "login as",
     "bypass login",
     "test users locally"
   ],
