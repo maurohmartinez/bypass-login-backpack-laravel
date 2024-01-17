@@ -22,7 +22,7 @@ composer require maurohmartinez/bypass-login-backpack-laravel --dev
 LOGIN_URL=admin/login
 ```
 
-3. [Optional] Publish config views if you need to customize them
+3. [Optional] Publish views files if you need to customize them
 ```shell
    php artisan vendor:publish --provider="MHMartinez\BypassLogin\app\Providers\BypassLoginServiceProvider" --tag=view
 ```
