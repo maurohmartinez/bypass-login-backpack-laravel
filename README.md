@@ -1,4 +1,8 @@
 # Bypass Login — Backpack for Laravel
+
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-packagist]
+
 Use a simple url to login with users having different roles to test your application locally.
 
 ⚠️ DO NOT install in production! ⚠️
@@ -38,3 +42,9 @@ Project Link: [https://github.com/maurohmartinez/bypass-login-backpack-laravel](
 ## Credits
 - [Mauro Martinez](https://inspiredpulse.com/) Developer
 - [Cristian Tabacitu](https://tabacitu.ro/) For creating [Backpack for Laravel](https://backpackforlaravel.com/)!
+
+
+[ico-version]: https://img.shields.io/packagist/v/maurohmartinez/bypass-login-backpack-laravel.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/maurohmartinez/bypass-login-backpack-laravel.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/maurohmartinez/bypass-login-backpack-laravel
